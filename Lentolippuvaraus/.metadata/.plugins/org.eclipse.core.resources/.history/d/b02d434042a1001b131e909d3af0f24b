@@ -1,0 +1,6 @@
+package lentolippuvaraus;
+
+public interface luoPaikat {
+
+	public ArrayList<Paikka> generoi();
+}

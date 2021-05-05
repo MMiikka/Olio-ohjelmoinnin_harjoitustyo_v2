@@ -1,0 +1,22 @@
+package lentolippuvaraus;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Tallennus implements Tallentaja {
+
+	
+	
+	public void tallenna(Asiakas asiakas) throws IOException {
+		
+		File f = new File("varaus.txt");
+		
+		FileWriter fw = new FileWriter(f);
+		
+		fw.write(asiakas.toString());
+		fw.flush();
+		fw.close();
+	}
+	
+}

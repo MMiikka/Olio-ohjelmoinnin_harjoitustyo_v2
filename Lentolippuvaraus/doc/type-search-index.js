@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"lentolippuvaraus","l":"Asiakas"},{"p":"lentolippuvaraus","l":"Lentokone"},{"p":"lentolippuvaraus","l":"Maat"},{"p":"lentolippuvaraus","l":"Main"},{"p":"lentolippuvaraus","l":"Ohjelma"},{"p":"lentolippuvaraus","l":"Paikka"},{"p":"lentolippuvaraus","l":"Varaus"}]

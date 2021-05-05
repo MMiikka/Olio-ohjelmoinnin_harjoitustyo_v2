@@ -1,0 +1,35 @@
+package lentolippuvaraus;
+
+import java.util.ArrayList;
+
+public class Lentoyhtiö {
+
+	private ArrayList<Lentokone> lentokoneet;
+
+	private String nimi;
+	
+	public Lentoyhtiö(ArrayList<Lentokone> lentokoneet,String nimi) {
+		this.lentokoneet = lentokoneet;
+		this.nimi = nimi;
+	}
+
+	public ArrayList<Lentokone> annaLentokoneet() {
+		return lentokoneet;
+	}
+
+	public void asetaLentokoneet(ArrayList<Lentokone> lentokoneet) {
+		this.lentokoneet = lentokoneet;
+	}
+
+
+
+
+
+	public String annaNimi() {
+		return nimi;
+	}
+
+	public void asetaNimi(String nimi) {
+		this.nimi = nimi;
+	}
+}

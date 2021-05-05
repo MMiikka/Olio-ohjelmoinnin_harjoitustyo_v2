@@ -1,0 +1,12 @@
+package lentolippuvaraus;
+
+public class Tallennus implements Tallentaja {
+
+	
+	
+	public void tallenna(Asiakas asiakas) {
+		
+		
+	}
+	
+}

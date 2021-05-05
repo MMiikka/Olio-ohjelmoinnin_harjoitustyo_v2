@@ -1,0 +1,13 @@
+package lentolippuvaraus;
+
+import java.io.FileOutputStream;
+
+public class Tallennus{
+
+	
+	
+	
+	public void kirjoitaTiedosto(Asiakas asiakas) {
+		
+	}
+}

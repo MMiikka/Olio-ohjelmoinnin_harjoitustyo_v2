@@ -1,0 +1,26 @@
+package lentolippuvaraus;
+
+public class Asiakas {
+
+	
+	private String etunimi;
+	private String sukunimi;
+//	private Paikka paikka;
+	
+	public Asiakas(String etunimi, String sukunimi) {
+		this.etunimi = etunimi;
+		this.sukunimi = sukunimi;
+	}
+	
+	public String annaNimi() {
+		
+		return  etunimi + " " + sukunimi; 
+	}
+	
+
+	
+	public String toString() {
+		
+		return annaNimi();
+	}
+}

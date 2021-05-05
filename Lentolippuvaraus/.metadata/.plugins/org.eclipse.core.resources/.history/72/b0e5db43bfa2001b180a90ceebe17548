@@ -1,0 +1,31 @@
+package lentolippuvaraus;
+
+public class Varaus{
+
+	private Lentokone lentokone;
+	private Maat maa;
+	private Asiakas asiakas;
+	private String id;
+	public Varaus(Asiakas asiakas, Lentokone lentokone, Maat maa) {
+		this.asiakas = asiakas;
+		this.lentokone = lentokone;
+		this.maa = maa;
+		
+	}
+	public void asetaVarauksenID(String id) {
+		this.id = id;
+	}
+	public String annaVarauksenID(Asiakas asiakas) {
+		return asiakas.annaID();
+	}
+
+	public String toString() {
+		
+		return "Asiakas " + asiakas.annaNimi() + ""
+	}
+	
+	
+
+	
+	
+}

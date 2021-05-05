@@ -1,0 +1,7 @@
+package lentolippuvaraus;
+
+import java.io.Serializable;
+
+public class Tallennus implements Serializable {
+
+}

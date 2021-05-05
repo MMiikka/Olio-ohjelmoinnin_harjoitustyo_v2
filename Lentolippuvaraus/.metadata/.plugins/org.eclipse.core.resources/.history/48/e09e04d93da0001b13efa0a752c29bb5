@@ -1,0 +1,45 @@
+package lentolippuvaraus;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		int i  = 1;
+		int summa = 0;
+		do {
+			summa = summa + i;
+			i = i +2;
+		}while(i == 100);
+	}
+		/*	
+MODULE summa(i) RETURNS summa i:stä 100
+  summa := 0
+  WHILE i <> 100 (* toisto loppuu kun i = 100 *) DO
+    summa := summa + i
+    i := i + 2
+  ENDWHILE
+  RETURN summa
+ENDMODULE
+
+	}
+	
+		System.out.println(" Hei, tervetuloa lentolippujen varausjärjestelmään! \n Syötä etu- ja sukunimesi!");
+		Scanner s = new Scanner(System.in);
+		Asiakas nimi = luoAsiakas(s);
+		System.out.println("Hei, " + nimi.toString()+ "!");
+		System.out.println("Mihin maahan haluaisit matkustaa?");
+
+	}
+	
+	public static Asiakas luoAsiakas(Scanner s) {
+		String nimi = s.nextLine();
+		String[] kokoNimi = nimi.split(" ");
+		Asiakas asiakas = new Asiakas(kokoNimi[0], kokoNimi[1]);
+		return asiakas;
+	}
+*/
+}

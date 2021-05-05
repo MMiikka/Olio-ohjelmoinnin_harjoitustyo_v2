@@ -1,0 +1,34 @@
+package lentolippuvaraus;
+
+import java.util.ArrayList;
+
+public class Lentokone {
+
+
+	
+	private ArrayList<Paikka> paikat;
+	private Maat maa;
+	public Lentokone(ArrayList<Paikka> paikat,Maat maa) {
+		
+		this.paikat = paikat;
+		this.maa = maa;
+	}
+
+	
+
+	public void asetaPaikat(ArrayList<Paikka> paikat) {
+		this.paikat = paikat;
+	}
+	
+	public Maat annaMaa() {
+		return maa;
+	}
+	
+
+	
+	
+	public String toString() {
+		return paikat.toString(); 
+	}
+	
+}

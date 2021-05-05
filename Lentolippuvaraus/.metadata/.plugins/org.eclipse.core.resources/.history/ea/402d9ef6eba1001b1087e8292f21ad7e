@@ -1,0 +1,15 @@
+package lentolippuvaraus;
+
+import java.io.FileOutputStream;
+
+public class Tallennus{
+
+	
+	private String filepath = "/Volumes/GoogleDrive/Oma Drive/Eityöt/Harjoitustyö/Lentolippuvaraus/src/lentolippuvaraus/";
+	
+	public void kirjoitaTiedosto(Asiakas asiakas) {
+		try {
+			FileOutputStream tallenna = new fileOutputStream();
+		}
+	}
+}

@@ -1,0 +1,7 @@
+package lentolippuvaraus;
+
+public class Varaus extends Asiakas {
+
+	
+	
+}

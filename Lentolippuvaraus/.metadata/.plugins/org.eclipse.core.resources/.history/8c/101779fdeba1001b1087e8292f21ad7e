@@ -1,0 +1,15 @@
+package lentolippuvaraus;
+
+import java.io.FileOutputStream;
+
+public class Tallennus{
+
+	
+	private String tiedosto = lentolippuvaraus/tallennukset/varaus.rtf";
+	
+	public void kirjoitaTiedosto(Asiakas asiakas) {
+		try {
+			FileOutputStream tallenna = new fileOutputStream();
+		}
+	}
+}

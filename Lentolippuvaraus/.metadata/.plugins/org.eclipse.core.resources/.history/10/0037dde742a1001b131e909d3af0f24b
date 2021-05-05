@@ -1,0 +1,35 @@
+package lentolippuvaraus;
+
+public class Paikka {
+
+	private Asiakas asiakas;
+	boolean vapaa;
+	int rivi;
+	int sarake;
+	
+	
+	public Paikka(Asiakas asiakas, boolean vapaa, int rivi, int sarake) {
+		this.asiakas = asiakas;
+		this.vapaa = vapaa;
+		this.rivi = rivi;
+		this.sarake = sarake;
+	}
+
+	public void asetaAsiakas(Asiakas asiakas) {
+		this.asiakas = asiakas;
+	}
+	
+	public boolean vapaa() {
+		if(this.asiakas != null) {
+			this.vapaa = true;
+		}else {
+			this.vapaa = false;
+		}
+		return this.vapaa;
+	}
+	
+
+		
+
+
+}

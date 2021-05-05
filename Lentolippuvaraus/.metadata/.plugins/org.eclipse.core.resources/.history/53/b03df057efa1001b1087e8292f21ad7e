@@ -1,0 +1,39 @@
+package lentolippuvaraus;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+	
+	
+
+		
+		Ohjelma m = new Ohjelma();
+	
+		m.kaynnista();
+		
+
+ }
+	public static void kirjoita() throws IOException {
+		 //tarvitaan jokin tiedosto
+		 File f = new File("peli-2020-02-25.txt");
+		
+	 //luodaan FileWriter tätä tiedostoa varten
+		FileWriter fw = new FileWriter(f);
+		
+		 //kirjoitetaan kaikki rivit
+		//rivinvaihto pitää lisätä itse!
+		 fw.write("testi"+"\n");
+		 fw.write("toinen rivi");
+	
+		 //flush tyhjentää mahdollisen puskurin ja
+		 //kirjoittaa tiedot lopullisesti levylle
+		 fw.flush();
+		 //sulkee kirjoituksen. Tämäkin tosin kutsuu flush-metodia
+		 fw.close();
+		}
+
+}

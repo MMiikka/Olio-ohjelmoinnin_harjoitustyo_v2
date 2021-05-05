@@ -1,0 +1,17 @@
+package lentolippuvaraus;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Lentokone lk = new Lentokone(null,Maat.RUOTSI);
+	
+
+
+		Ohjelma m = new Ohjelma();
+		m.kaynnista();
+
+ }
+}

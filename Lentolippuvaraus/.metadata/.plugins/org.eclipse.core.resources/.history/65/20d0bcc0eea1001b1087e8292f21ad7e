@@ -1,0 +1,8 @@
+package lentolippuvaraus;
+
+public interface Tallentaja {
+
+	
+	
+	public void tallenna(Asiakas asiakas);
+}

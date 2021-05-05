@@ -1,0 +1,48 @@
+package lentolippuvaraus;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+	
+	/*
+		File f = new File("varaus.txt");
+		Varaus v = new Varaus();
+		try {
+		v.lueVaraus(f);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		*/
+		Ohjelma m = new Ohjelma();
+	
+		m.paavalikko();
+		
+
+ }
+
+
+}
+
+//Asiakas lueVaraus(fFile f) throws ioexc
+// List<???> rivit = files.readAllLines(f.toPath());
+/*
+		for(String s : rivit) {
+		String[] tiedot = s.split(",")
+			SString kone = tiedot]0];
+			int rivi = inteher.parseInt(tiedot[i];
+			jne...
+			
+			
+		}
+return asiakas;
+
+Kun ohjelma käynnistyy se lukee varauksen tiedostosta ja tallentaa sen siihen koneeseen jossa varaus on.
+
+*/

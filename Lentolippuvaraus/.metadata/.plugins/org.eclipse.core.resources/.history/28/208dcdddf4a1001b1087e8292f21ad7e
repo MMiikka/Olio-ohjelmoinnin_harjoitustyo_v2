@@ -1,0 +1,41 @@
+package lentolippuvaraus;
+
+public class Paikka {
+
+	
+	private Asiakas asiakas;
+	private boolean vapaa;
+	private int numero;
+	
+	public Paikka(boolean vapaa, int numero) {
+		this.vapaa = vapaa;
+		this.numero = numero;
+	}
+	
+	public void asetaAsiakas(Asiakas asiakas) throws Exception {
+		
+		if(vapaa == true) {
+			this.asiakas = asiakas;
+		}else {
+			System.out.println("paikka ei vapaa");
+		}
+		vapaa = false;
+	}
+	public int annaVapaatPaikat() {
+		if(this.vapaa == true) {
+			return numero;
+		}
+		else {
+			return 0;
+		}
+		
+	}
+	public void asetaVarattu(boolean va) {
+		this.vapaa = false;
+	}
+	
+	public int annaNumero() {
+		return this.numero;
+	}
+	
+}

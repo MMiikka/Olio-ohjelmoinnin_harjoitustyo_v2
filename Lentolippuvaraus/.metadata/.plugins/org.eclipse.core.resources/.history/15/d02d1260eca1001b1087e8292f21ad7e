@@ -1,0 +1,13 @@
+package lentolippuvaraus;
+
+
+public class Tallennus{
+
+	
+	
+	public void kirjoitaTiedosto(Asiakas asiakas) throws IOException {
+		
+		
+	
+	}
+}

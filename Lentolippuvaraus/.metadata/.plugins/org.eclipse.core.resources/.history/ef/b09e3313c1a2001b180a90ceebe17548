@@ -1,0 +1,50 @@
+package lentolippuvaraus;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+
+public class Varaus{
+
+	private Lentokone lentokone;
+	private Maat maa;
+	private Asiakas asiakas;
+	private String id;
+	public Varaus(Asiakas asiakas, Lentokone lentokone, Maat maa) {
+		this.asiakas = asiakas;
+		this.lentokone = lentokone;
+		this.maa = maa;
+		
+	}
+	public void asetaVarauksenID(String id) {
+		this.id = id;
+	}
+	public String annaVarauksenID(Asiakas asiakas) {
+		return asiakas.annaID();
+	}
+	public Varaus lueVaraus(File f) throws IOException {
+		List<String> rivit = Files.readAllLines(f.toPath());
+	
+
+	
+			for(String s : rivit) {
+			String[] tiedot = s.split(",");
+				String kone = tiedot[0];
+				int rivi = Integer.parseInt(tiedot[1]);
+				
+			}
+
+	}
+	
+
+	public String toString() {
+		
+		return "Asiakas: " + asiakas.annaNimi() + " ID: " + annaVarauksenID(asiakas)
+		+ " Kone: " + this.lentokone.toString() + " Kohde: "+ this.maa.toString();
+	}
+	
+	
+
+	
+	
+}

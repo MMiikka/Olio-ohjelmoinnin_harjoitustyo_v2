@@ -1,0 +1,15 @@
+package lentolippuvaraus;
+
+public class Varaus extends Asiakas {
+
+	public Varaus(String etunimi, String sukunimi, String id) {
+		super(etunimi, sukunimi, id);
+		
+	}
+
+	
+	
+
+	
+	
+}

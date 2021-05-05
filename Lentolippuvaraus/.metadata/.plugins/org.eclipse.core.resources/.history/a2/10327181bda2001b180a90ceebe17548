@@ -1,0 +1,21 @@
+package lentolippuvaraus;
+
+public class Varaus{
+
+	private Lentokone lentokone;
+	private Maat maa;
+	private Asiakas asiakas;
+	
+	public Varaus(Asiakas asiakas, Lentokone lentokone, Maat maa) {
+		this.asiakas = asiakas;
+		this.lentokone = lentokone;
+		this.maa = maa;
+		
+	}
+
+	
+	
+
+	
+	
+}

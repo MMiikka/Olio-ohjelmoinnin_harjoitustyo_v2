@@ -1,0 +1,37 @@
+package lentolippuvaraus;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+	
+	
+
+		
+		Ohjelma m = new Ohjelma();
+	
+		m.kaynnista();
+		
+
+ }
+	public static void kirjoita(Asiakas asiakas) throws IOException {
+		 //tarvitaan jokin tiedosto
+		 File f = new File("varaus.txt");
+		
+	 //luodaan FileWriter tätä tiedostoa varten
+		FileWriter fw = new FileWriter(f);
+		
+
+		 fw.write("testi"+"\n");
+
+	
+
+		 fw.flush();
+
+		 fw.close();
+		}
+
+}

@@ -1,0 +1,49 @@
+package lentolippuvaraus;
+
+import java.util.Random;
+
+public class Asiakas {
+
+	private String id;
+	private String etunimi;
+	private String sukunimi;
+	private Paikka paikka;
+	
+	public Asiakas(String etunimi, String sukunimi) {
+		this.etunimi = etunimi;
+		this.sukunimi = sukunimi;
+	}
+	
+	public String annaNimi() {
+		
+		return  etunimi + " " + sukunimi; 
+	}
+	
+  public void asetaPaikka(Paikka paikka) {
+	  this.paikka = paikka;
+  }
+  public Paikka annaPaikka() {
+	  return paikka;
+  }
+  
+  public boolean onkoPaikka() {
+	  if(this.paikka != null) {
+		  return false;
+	  }else {return true;
+	  }
+  }
+  
+  public void asetaID(){
+	  Random r = new Random();
+	  r.nextInt(1000);
+	  this.id = r.toString();
+  }
+  public String annaID() {
+	  return id;
+  }
+	
+	public String toString() {
+		
+		return annaNimi() + " Paikan numerosi on " + annaPaikka().annaNumero();
+	}
+}

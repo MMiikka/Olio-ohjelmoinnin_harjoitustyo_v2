@@ -1,0 +1,19 @@
+package lentolippuvaraus;
+
+public class Varaus extends Asiakas {
+
+	private Lentokone lentokone;
+	private Maat maa;
+	public Varaus(String etunimi, String sukunimi, Lentokone lentokone, Maat maa) {
+		super(etunimi, sukunimi);
+		this.lentokone = lentokone;
+		this.maa = maa;
+		
+	}
+
+	
+	
+
+	
+	
+}
