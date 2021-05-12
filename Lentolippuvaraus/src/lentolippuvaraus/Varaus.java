@@ -102,10 +102,7 @@ public class Varaus{
 	 * @throws IOException , Jos varauksen poisto epäonnistuu
 	 */
 	public void poistaVaraus() throws IOException {
-		FileWriter fw = new FileWriter(f);
-		fw.nullWriter();
-		fw.flush();
-		fw.close();
+		f.delete();
 	}
 
 	

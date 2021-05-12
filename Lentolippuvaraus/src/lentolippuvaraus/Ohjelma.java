@@ -29,12 +29,21 @@ public class Ohjelma {
 		
 		do {
 		File f =  new File("varaus.txt");
+		if(!f.exists()) {
+			try {
+				f.createNewFile();
+			}catch (IOException e) {
+				System.err.println("Tiedoston luonti epäonnistui!");
+				e.printStackTrace();
+				return;
+			}
+		}
 		Scanner s = new Scanner(System.in);
-		//do {
+		
 			
 		System.out.println("Hei, tervetuloa äkkilähtöjen varausjärjestelmään! \n Syötä etu- ja sukunimesi");
 		
-		try {
+	try {
 			Asiakas nimi = luoAsiakas(s);
 	
 			System.out.println("Hei, " + nimi.annaNimi()+ "! Asiakas ID:si on: " + nimi.annaID());
@@ -67,7 +76,9 @@ public class Ohjelma {
 		
 		s.close();
 		
-		}catch(Exception e) {
+		}catch(IOException e) {
+			e.printStackTrace();
+			System.err.println(e.getMessage());
 			
 			System.err.println("Kirjoita sekä etunimi ja sukunimi. Käytäthän vain kirjaimia!");
 			onNimi = false;
