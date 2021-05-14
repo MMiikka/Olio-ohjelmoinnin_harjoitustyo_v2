@@ -71,7 +71,7 @@ public class Ohjelma {
 		} catch(InputMismatchException e) {
 			//e.printStackTrace();
 			System.out.println("Sinun pitää valita oikea numero! \n Ohjelma palautuu alkutilaansa." );
-			paavalikko();
+			continue;
 		}
 		
 		s.close();
